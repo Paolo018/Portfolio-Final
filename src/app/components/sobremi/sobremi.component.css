@@ -1,0 +1,114 @@
+/* Seccion Sobre mi */
+
+#sobremi {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: black;
+    display: flex;
+}
+
+
+.imgPerfil {
+    max-width: 25%;
+    margin-right: 10%;
+}
+
+.imgPerfil img {
+    padding: 5%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #3f3f3f;
+}
+
+#sobremi i {
+    margin: -60px;
+    transition: 0.5s;
+    width: 150px;
+    border-style: none;
+}
+
+.imgPerfilModal {
+    margin-left: 250px;
+    border-radius: 10px;
+}
+
+.nombrePerfilModal {
+    border-radius: 10px;
+    padding-top: 55px;
+}
+
+.infoPerfilModal {
+    border-radius: 10px;
+    padding-top: 190px;
+}
+
+#sobremi i:hover {
+    color: purple;
+}
+
+.sobremi {
+    margin: 0% 10%;
+}
+
+.titulosobremi {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+.sobremi h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+.sobremi h2 span {
+    color: purple;
+}
+
+.sobremi h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.sobremi p {
+    font-size: 14px;
+    line-height: 25px;
+    color: black;
+    margin-bottom: 12px;
+}
+
+.sobremi h4 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.sobremi ul {
+    list-style: none;
+}
+
+.sobremi ul li {
+    margin: 12px 0;
+}
+
+.sobremi ul li strong {
+    display: inline-block;
+    color: purple;
+    width: 130px;
+}
+
+.sobremi ul li span {
+    background-color: purple;
+    color: #ffff;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+}

@@ -1,0 +1,170 @@
+/* Seccion habilidades */
+
+.skills {
+    background-color: #252a2e;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.contenido-skills {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.fila-skills {
+    display: flex;
+}
+
+.col-skills {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.col-skills h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.skill span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.barra-skill {
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.htmlcss, .js, .bootstrap, .comunicacion, .equipo, .creatividad {
+    background-color: purple;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 100%;
+}
+
+.barra-skill span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: purple;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.htmlcss {
+    width: 85%;
+    animation: 2s htmlcss forwards;
+}
+
+.js {
+    width: 75%;
+    animation: 2s js forwards;
+}
+
+.bootstrap {
+    width: 80%;
+    animation: 2s bootstrap forwards;
+}
+
+.comunicacion {
+    width: 80%;
+    animation: 2s comunicacion forwards;
+}
+
+.equipo {
+    width: 85%;
+    animation: 2s equipo forwards;
+}
+
+.creatividad {
+    width: 90%;
+    animation: 2s creatividad forwards;
+}
+
+@keyframes htmlcss {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes js {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes bootstrap {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes comunicacion {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes equipo {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes creatividad {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+.editorskills {
+    margin: auto;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.añadirskills {
+    padding: 10px;
+}
+
+.eliminarskills {
+    padding: 10px;
+}
+
+.editarskills {
+    padding: 10px;
+}

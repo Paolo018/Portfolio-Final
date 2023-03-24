@@ -1,0 +1,54 @@
+<!-- Sobre mi -->
+<section id="sobremi">
+  
+    <div class="imgPerfil">
+      <div class="imgPerfilModal">
+      <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#imgPerfilModal">
+        <i class="fa-solid fa-camera-retro"></i>
+      </button></div>
+      <img src="assets/img/WhatsApp Image marzo.jpeg" alt="Foto-de-perfil">
+    </div>
+    <div class="sobremi" *ngFor="let sobremi of sobremi">
+      <h1 class="titulosobremi">Sobre mi</h1>
+      <h2>Hola, soy <span>{{sobremi.nombre}}</span></h2>
+      <h3>{{sobremi.cargo}}</h3>
+      <p>{{sobremi.descripcion}}
+      </p>
+
+      <h4>Datos Personales</h4>
+      <ul>
+        <li>
+          <strong>Edad</strong>
+          {{sobremi.edad}}
+        </li>
+        <li>
+          <strong>Teléfono</strong>
+          {{sobremi.telefono}}
+        </li>
+        <li>
+          <strong>Email</strong>
+          {{sobremi.email}}
+        </li>
+        <li>
+        <strong>Dirección</strong>
+        {{sobremi.direccion}}
+        </li>
+        <li>
+         <strong>Cargo Actual</strong>
+         <span>{{sobremi.cargoactual}}</span>
+        </li>
+      </ul>
+    </div>
+    <div class="nombrePerfilModal">
+    <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#nombrePerfilModal">
+      <i class="fa-sharp fa-solid fa-pencil"></i>
+    </button>
+    <div class="infoPerfilModal">
+      <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#infoPerfilModal">
+        <i class="fa-sharp fa-solid fa-pencil"></i>
+      </button>
+    </div>
+    </div>
+
+
+</section>

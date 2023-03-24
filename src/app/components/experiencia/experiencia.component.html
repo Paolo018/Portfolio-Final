@@ -1,0 +1,55 @@
+<!-- Seccion estudios y experiencia -->
+<section id="resumen" class="resumen">
+    <div class="contenido-seccion">
+      <h3>Mi preparacion y experiencia</h3>
+      <div class="info-resumen">
+        <div class="colresumen">
+          <span class="titulo">Educacion</span>
+          <table *ngFor="let estudios of estudios">
+            <tr>
+              <td class="datos"><h3>{{estudios.inicio}} - {{estudios.fin}}</h3></td>
+              <td rowspan="2" class="descripcion">
+                {{estudios.descripcion}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>{{estudios.titulo}}</h4>
+                <p>{{estudios.institucion}}</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="colresumen">
+          <span class="titulo">Experiencia laboral</span>
+          <table *ngFor="let experiencia of experiencia">
+            <tr>
+              <td class="datos"><h3> {{experiencia.inicio}} </h3><h6>(Actualidad)</h6></td>
+              <td rowspan="2" class="descripcion">
+                {{experiencia.descripcion}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>{{experiencia.trabajo}}</h4>
+                <p>{{experiencia.cargo}}</p>
+              </td>
+            </tr>
+          </table>
+          <div class="editorexperiencia">
+           <div class="añadirExperiencia">
+            <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#añadirExperienciaModal">
+              <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+              <div class="eliminarExperiencia">
+                <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#eliminarExperienciaModal">
+                  <i class="fa-solid fa-trash-can"></i>
+                  </button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

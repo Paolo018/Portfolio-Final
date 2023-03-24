@@ -1,0 +1,73 @@
+#navbar {
+    position: fixed;
+    width: 100%;
+}
+
+.logoAp {
+    filter: invert();
+    width: 100%;
+    height: 100%;
+}
+
+#links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#icono-nav {
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 12px;
+    font-weight: 400;
+    transition: 0.5s;
+    display: none;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+#icono-nav:hover {
+    color: purple;
+}
+
+.directorio li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 12px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.directorio li a:hover {
+    color: purple;
+}
+
+i.fa-brands.fa-codepen.fa-xl,i.fa-brands.fa-linkedin.fa-xl,i.fa-brands.fa-github.fa-xl,i.fa-solid.fa-user-lock.fa-xl {
+    color: #fff;
+    transition: 0.5s;
+}
+
+i.fa-brands.fa-codepen.fa-xl:hover {
+    color: purple;
+}
+
+i.fa-brands.fa-linkedin.fa-xl:hover {
+    color: purple;
+}
+
+i.fa-brands.fa-github.fa-xl:hover {
+    color: purple;
+}
+
+i.fa-solid.fa-user-lock.fa-xl:hover {
+    color: purple;
+}
+
+
+ul.list-group.list-group-horizontal{
+    --bs-list-group-bg: transparent;
+    --bs-list-group-border-color: transparent;
+}

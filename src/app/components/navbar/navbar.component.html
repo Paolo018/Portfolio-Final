@@ -1,0 +1,33 @@
+   <!--Sección navbar-->
+   <section id="navbar">
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+          <img src="assets/img/argentina programa inti y ministerio.png" alt="" width="75%" height="auto">
+        </a>
+       <div>
+        <ul id="links" class="directorio">
+          <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+          <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+          <li><a href="#resumen" onclick="seleccionar(this)">EXPERIENCIA</a></li>
+          <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+          <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+        </ul>
+       </div>
+       <div id="icono-nav" onclick="responsiveMenu()">
+        <i class="fa-solid fa-bars"></i>
+       </div>
+             <div class="iconos">
+               <ul class="list-group list-group-horizontal">
+                <li class="list-group-item"><a href=""><i class="fa-brands fa-github fa-xl"></i></a></li>
+                <li class="list-group-item"><a href=""><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
+                <li class="list-group-item"><a href=""><i class="fa-brands fa-codepen fa-xl"></i></a></li>
+                <li class="list-group-item">
+                 <!-- Button trigger modal -->
+                 <i class="fa-solid fa-user-lock fa-xl" type="button"  data-bs-toggle="modal" data-bs-target="#loginModal">
+                 </i></li>
+               </ul>
+             </div>
+          </div>
+      </nav>
+  </section>
