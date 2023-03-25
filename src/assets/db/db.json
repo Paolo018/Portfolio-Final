@@ -45,5 +45,53 @@
             "inicio": "2020 - 2023",
             "descripcion": "Trabajo actualmente en el Correo Argentino, realicé tareas administrativas en CDP Caba Norte durante 2 años. Soy auxiliar y actualmente me encuentro en CDP Lomas de Zamora."
         }
+    ],
+    "habilidadest": [
+        {
+            "id": 1,
+            "skill": "HTML & CSS",
+            "porcentaje": "85%",
+            "clase": "htmlcss"
+        },
+        {
+            "id": 2,
+            "skill": "Javascript",
+            "porcentaje": "75%",
+            "clase": "js"
+        },
+        {
+            "id": 3,
+            "skill": "Bootstrap",
+            "porcentaje": "80%",
+            "clase": "bootstrap"
+        }
+    ],
+    "habilidadesp": [
+        {
+            "id": 1,
+            "skill": "Comunicación",
+            "porcentaje": "80%",
+            "clase": "comunicacion"
+        },
+        {
+            "id": 2,
+            "skill": "Equipo",
+            "porcentaje": "85%",
+            "clase": "equipo"
+        },
+        {
+            "id": 3,
+            "skill": "Creatividad",
+            "porcentaje": "90%",
+            "clase": "creatividad"
+        }
+    ],
+    "proyectos": [
+        {
+            "id": 1,
+            "proyecto": "Portfolio #ArgentinaPrograma",
+            "descripcion": "Diseño Web",
+            "img": "../assets/img/1234.png"
+        }
     ]
 }

@@ -6,27 +6,11 @@
         <!-- Skills tecnicos -->
         <div class="col-skills">
           <h3>Skills tecnicos</h3>
-        <div class="skill">
-          <span>HTML & CSS</span>
+        <div class="skill" *ngFor="let habilidadest of habilidadest">
+          <span>{{habilidadest.skill}}</span>
           <div class="barra-skill">
-            <div class="htmlcss">
-              <span>85%</span>
-            </div>
-          </div>
-        </div>
-        <div class="skill">
-          <span>JavaScript</span>
-          <div class="barra-skill">
-            <div class="js">
-              <span>70%</span>
-            </div>
-          </div>
-        </div>
-        <div class="skill">
-          <span>Bootstrap</span>
-          <div class="barra-skill">
-            <div class="bootstrap">
-              <span>80%</span>
+            <div [ngClass]='habilidadest.clase'>
+              <span>{{habilidadest.porcentaje}}</span>
             </div>
           </div>
         </div>
@@ -34,27 +18,11 @@
         <!-- Skills profesionales -->
         <div class="col-skills">
           <h3>Skills profresionales</h3>
-          <div class="skill">
-            <span>Comunicacion</span>
+          <div class="skill" *ngFor="let habilidadesp of habilidadesp">
+            <span>{{habilidadesp.skill}}</span>
             <div class="barra-skill">
-              <div class="comunicacion">
-                <span>80%</span>
-              </div>
-            </div>
-          </div>
-          <div class="skill">
-            <span>Trabajo en equipo</span>
-            <div class="barra-skill">
-              <div class="equipo">
-                <span>85%</span>
-              </div>
-            </div>
-          </div>
-          <div class="skill">
-            <span>Creatividad</span>
-            <div class="barra-skill">
-              <div class="creatividad">
-                <span>90%</span>
+              <div [ngClass]='habilidadesp.clase'>
+                <span>{{habilidadesp.porcentaje}}</span>
               </div>
             </div>
           </div>
