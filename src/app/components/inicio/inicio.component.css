@@ -65,3 +65,16 @@
 .inicio a:hover {
     background-color: purple;
 }
+
+.imgInicioModal i:hover {
+    color: purple;
+}
+
+.imgInicioModal i {
+    color: #ffff;
+    transition: 0.5s;
+}
+
+.imgInicioModal {
+    margin-left: 90%;
+}
