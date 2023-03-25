@@ -2,28 +2,12 @@
 <section id="portfolio">
     <h3 class="titulo-portfolio">MIS PROYECTOS</h3>
     <div class="fila">
-      <div class="proyecto">
+      <div class="proyecto" *ngFor="let proyectos of proyectos">
         <div class="overlay"></div>
-        <img src="/assets/img/1234.png" alt="">
+        <img [src]='proyectos.img' alt="">
         <div class="info">
-          <h4>Portfolio #ArgentinaPrograma</h4>
-          <p>Diseño Web</p>
-        </div>
-      </div>
-      <div class="proyecto">
-        <div class="overlay"></div>
-        <img src="/assets/img/2.jpg" alt="">
-        <div class="info">
-          <h4>Descripción del proyecto</h4>
-          <p>Diseño Web</p>
-        </div>
-      </div>
-      <div class="proyecto">
-        <div class="overlay"></div>
-        <img src="/assets/img/2.jpg" alt="">
-        <div class="info">
-          <h4>Descripción del proyecto</h4>
-          <p>Diseño Web</p>
+          <h4>{{proyectos.proyecto}}</h4>
+          <p>{{proyectos.descripcion}}</p>
         </div>
       </div>
     </div>

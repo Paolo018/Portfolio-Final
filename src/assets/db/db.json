@@ -92,6 +92,18 @@
             "proyecto": "Portfolio #ArgentinaPrograma",
             "descripcion": "Diseño Web",
             "img": "../assets/img/1234.png"
+        },
+        {
+            "id": 2,
+            "proyecto": "BackEnd #ArgentinaPrograma",
+            "descripcion": "Diseño Web",
+            "img": "../assets/img/backend.png"
+        },
+        {
+            "id": 3,
+            "proyecto": "FrontEnd #ArgentinaPrograma",
+            "descripcion": "Diseño Web",
+            "img": "../assets/img/frontend.png"
         }
     ]
 }
