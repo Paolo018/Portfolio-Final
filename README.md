@@ -1,27 +1,49 @@
-# PortafolioAngular
+# PortafolioAngular / Front End
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+## Contenidos:
+*Resumen
+*Desarrollo
+*Tecnologías
+*Visualización
+*Agradecimientos
 
-## Development server
+## Resumen
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Proyecto integrador que desarrolla una aplicación full stack que muestra mis datos personales, estudios cursados, experiencia laboral, habilidades entre otras.
 
-## Code scaffolding
+Este portfolio es el proyecto final del curso Argentina Programa / "Yo Programo" (3ra cohorte) implementado de manera autogestionada. Se desarrolla una web principal accesible a cualquier usuario y modales de acceso exclusivo para el administrador mediante un usuario y una contraseña (admin), permitiendo realizar un CRUD (crear / ver / editar / eliminar) de la información en formularios reactivos creados para tal fin. (*Todavia no funciona el CRUD)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Desarrollo
 
-## Build
+Se implementa como arquitectura distribuida contando con un frontend, una base de datos y un backend.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+FRONTEND
+El proceso inicia desde una maqueta estática hasta la dinámica, la cual se despliega en Firebase.
+Es la interfaz gráfica del usuario que muestra la información. (No levanta Sobremi)
 
-## Running unit tests
+## Tecnologias
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Los lenguajes y tecnologías empleados en el frontend son:
 
-## Running end-to-end tests
+HTML5
+CSS3
+Bootstrap v.5.2
+Typescript
+VSC (VisualStudioCode) v.1.76.2
+Angular v.15
+Firebase
+Imgbb
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Visualizaciones
 
-## Further help
+Para ver este proyecto funcionando, clickea acá url=https://portfolio-back-end-wiyc.onrender.com.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para acceder al dashboard, debés clickear en el botón de login ubicado en el extremo derecho del navbar e introducir el email y la clave solicitados.
+
+Para salir del mismo, clickeando en el botón de logout ubicado en el menú vertical a la derecha, se regresa a la página principal.
+
+## Agradecimientos
+
+A todos mis afectos, muchas gracias.
+
+A "ProgramaTK", un grupo de estudiantes del programa, con la idea de aprender, entender el material y llegar todos a la meta.
