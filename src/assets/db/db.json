@@ -1,21 +1,21 @@
 {
     "inicio": [
         {
-            "nombre": "Pablo Paredes",
-            "cargo": "Full Stack Developer Jr."
+            "nombre": "Pablo",
+            "apellido": "Paredes"
         }
     ],
 
-    "sobremi": [
+    "persona": [
         {
-            "nombre": "Pablo Paredes",
-            "cargo": "Full Stack Developer Jr.",
-            "descripcion": "Vivo en Capital Federal, Buenos Aires. Trabajo en el Correo Argentino, soy auxiliar y busco adentrarme en la rama de desarrollo web para crecer y progresar. Realice trabajos administrativos en la sucursal CDP Caba Norte en el correo, Data Entry y varias tareas administrativas.",
+            "nombre": "Pablo",
+            "apellido": "Paredes",
+            "sobremi": "Trabajo en el Correo Argentino, soy auxiliar y busco adentrarme en la rama de desarrollo web para crecer y progresar. Realice trabajos administrativos en la sucursal CDP Caba Norte en el correo, Data Entry y varias tareas administrativas.",
             "edad": 21,
             "telefono": "11-3166-5551",
             "email": "Thepablodead18@gmail.com",
-            "direccion": "Av. Osvaldo Cruz 2313",
-            "cargoactual": "Auxiliar"
+            "direccion": "Capital Federal, Buenos Aires",
+            "foto": "./assets/img/WhatsApp Image marzo.jpeg"
         }
     ],
 
@@ -40,70 +40,68 @@
     "experiencia": [
         {
             "id": 1,
-            "trabajo": "Correo Argentino",
+            "empresa": "Correo Argentino",
             "cargo": "auxiliar",
             "inicio": "2020 - 2023",
             "descripcion": "Trabajo actualmente en el Correo Argentino, realicé tareas administrativas en CDP Caba Norte durante 2 años. Soy auxiliar y actualmente me encuentro en CDP Lomas de Zamora."
         }
     ],
-    "habilidadest": [
+    "habilidades": [
         {
             "id": 1,
-            "skill": "HTML & CSS",
-            "porcentaje": "85%",
+            "habilidad": "HTML & CSS",
+            "porcentaje": "75%",
             "clase": "htmlcss"
         },
         {
             "id": 2,
-            "skill": "Javascript",
+            "habilidad": "Javascript",
             "porcentaje": "75%",
             "clase": "js"
         },
         {
             "id": 3,
-            "skill": "Bootstrap",
+            "habilidad": "Bootstrap",
             "porcentaje": "80%",
             "clase": "bootstrap"
-        }
-    ],
-    "habilidadesp": [
+        },
         {
-            "id": 1,
-            "skill": "Comunicación",
+            "id": 4,
+            "habilidad": "Comunicación",
             "porcentaje": "80%",
             "clase": "comunicacion"
         },
         {
-            "id": 2,
-            "skill": "Equipo",
+            "id": 5,
+            "habilidad": "Equipo",
             "porcentaje": "85%",
             "clase": "equipo"
         },
         {
-            "id": 3,
-            "skill": "Creatividad",
+            "id": 6,
+            "skihabilidadll": "Creatividad",
             "porcentaje": "90%",
             "clase": "creatividad"
         }
     ],
-    "proyectos": [
+    "portafolio": [
         {
             "id": 1,
             "proyecto": "Portfolio #ArgentinaPrograma",
             "descripcion": "Diseño Web",
-            "img": "../assets/img/1234.png"
+            "foto": "../assets/img/1234.png"
         },
         {
             "id": 2,
             "proyecto": "BackEnd #ArgentinaPrograma",
             "descripcion": "Diseño Web",
-            "img": "../assets/img/backend.png"
+            "foto": "../assets/img/backend.png"
         },
         {
             "id": 3,
             "proyecto": "FrontEnd #ArgentinaPrograma",
             "descripcion": "Diseño Web",
-            "img": "../assets/img/frontend.png"
+            "foto": "../assets/img/frontend.png"
         }
     ]
 }

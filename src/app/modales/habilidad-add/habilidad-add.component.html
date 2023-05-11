@@ -1,0 +1,61 @@
+  <!-- Modal añadir skills-->
+  <div class="modal fade" id="añadirSkillsModal" tabindex="-1" aria-labelledby="añadirSkillsModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="añadirSkillsModal">Añadir skill</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <form (ngSubmit)="onCreate()" novalidate>
+          <div class="modal-body">
+            <div class="mb-3">  
+  
+              <label for="habilidad" class="form-label">Habilidad</label>
+              <input type="text" class="form-control" id="habilidad" [(ngModel)]="habilidad" required>
+            </div>
+            <div class="mb-3">  
+              <label for="porcentaje" class="form-label">Porcentaje</label>
+              <input type="text" class="form-control" id="porcentaje" [(ngModel)]="porcentaje" required>
+            </div>
+              
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal editar skills-->
+  <div class="modal fade" id="editarSkillsModal" tabindex="-1" aria-labelledby="editarSkillsModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="editarSkillsModal">Editar skills</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+        <div class="modal-body">
+          <div class="mb-3">  
+
+            <label for="habilidad" class="form-label">Habilidad</label>
+            <input type="text" class="form-control" id="habilidad" [(ngModel)]="habilidad" required>
+          </div>
+          <div class="mb-3">  
+            <label for="porcentaje" class="form-label">Porcentaje</label>
+            <input type="text" class="form-control" id="porcentaje" [(ngModel)]="porcentaje" required>
+          </div>
+            
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Ingresar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  

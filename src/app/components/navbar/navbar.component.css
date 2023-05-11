@@ -45,7 +45,7 @@
     color: purple;
 }
 
-i.fa-brands.fa-codepen.fa-xl,i.fa-brands.fa-linkedin.fa-xl,i.fa-brands.fa-github.fa-xl,i.fa-solid.fa-user-lock.fa-xl {
+i.fa-brands.fa-codepen.fa-xl,i.fa-brands.fa-linkedin.fa-xl,i.fa-brands.fa-github.fa-xl,i.fa-solid.fa-user-lock.fa-xl,i.fa-solid.fa-user.fa-xl {
     color: #fff;
     transition: 0.5s;
 }
@@ -65,6 +65,11 @@ i.fa-brands.fa-github.fa-xl:hover {
 i.fa-solid.fa-user-lock.fa-xl:hover {
     color: purple;
 }
+
+i.fa-solid.fa-user.fa-xl:hover {
+    color: purple;
+}
+
 
 
 ul.list-group.list-group-horizontal{

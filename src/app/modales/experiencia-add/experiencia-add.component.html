@@ -1,0 +1,41 @@
+<!-- Modal añadir experiencia-->
+<div class="modal fade" id="añadirExperienciaModal" tabindex="-1" aria-labelledby="añadirExperienciaModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="añadirExperienciaModal">Añadir experiencia</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <form (ngSubmit)="onCreate()">
+            <div class="modal-body">
+                <div class="mb-3">  
+                  <label for="empresa" class="form-label">Trabajo</label>
+                  <input type="text" class="form-control" id="empresa">
+                </div>
+                <div class="mb-3">  
+                  <label for="cargo" class="form-label">Cargo</label>
+                  <input type="text" class="form-control" id="cargo">
+                </div>
+                <div class="mb-3">  
+                  <label for="inicio" class="form-label">Fecha de inicio</label>
+                  <input type="text" class="form-control" id="inicio">
+                </div>
+                <div class="mb-3">  
+                  <label for="fin" class="form-label">Fecha de fin</label>
+                  <input type="text" class="form-control" id="fin">
+                </div>
+      
+                <div class="mb-3">  
+                  <label for="descripcion" class="form-label">Descripcion</label>
+                  <textarea class="form-control" id="descripcion"></textarea>
+                </div>
+                
+                <div>
+                  <button type="submit" class="btn btn-primary">Agregar Experiencia</button>
+                </div>
+              </div>
+            </form>
+      </div>
+    </div>
+  </div>

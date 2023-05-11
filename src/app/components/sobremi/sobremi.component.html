@@ -1,49 +1,44 @@
 <!-- Sobre mi -->
-<section id="sobremi">
+<section id="sobremi" *ngFor="let Persona of persona">
   
     <div class="imgPerfil">
       <div class="imgPerfilModal">
       <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#imgPerfilModal">
         <i class="fa-solid fa-camera-retro"></i>
       </button></div>
-      <img src="assets/img/WhatsApp Image marzo.jpeg" alt="Foto-de-perfil">
+      <img [src]='Persona.foto' alt="Foto-de-perfil">
     </div>
-    <div class="sobremi" *ngFor="let sobremi of sobremi">
+    <div class="sobremi">
       <h1 class="titulosobremi">Sobre mi</h1>
-      <h2>Hola, soy <span>{{sobremi.nombre}}</span></h2>
-      <h3>{{sobremi.cargo}}</h3>
-      <p>{{sobremi.descripcion}}
+      <h2>Hola, soy <span>{{Persona.nombre}} {{Persona.apellido}} </span></h2>
+      <h3>Full Stack Developer Jr.</h3>
+      <p>{{Persona.sobremi}}
       </p>
 
       <h4>Datos Personales</h4>
       <ul>
         <li>
           <strong>Edad</strong>
-          {{sobremi.edad}}
+          {{Persona.edad}}
         </li>
         <li>
           <strong>Teléfono</strong>
-          {{sobremi.telefono}}
+          {{Persona.telefono}}
         </li>
         <li>
           <strong>Email</strong>
-          {{sobremi.email}}
+          {{Persona.email}}
         </li>
         <li>
         <strong>Dirección</strong>
-        {{sobremi.direccion}}
+        {{Persona.direccion}}
         </li>
       </ul>
     </div>
-    <div class="nombrePerfilModal">
+    <div class="nombrePerfilModal" *ngIf="isLogged">
     <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#nombrePerfilModal">
       <i class="fa-sharp fa-solid fa-pencil"></i>
     </button>
-    <div class="infoPerfilModal">
-      <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#infoPerfilModal">
-        <i class="fa-sharp fa-solid fa-pencil"></i>
-      </button>
-    </div>
     </div>
 
 

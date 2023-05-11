@@ -67,89 +67,6 @@
     font-size: 14px;
 }
 
-.htmlcss {
-    width: 85%;
-    animation: 2s htmlcss forwards;
-}
-
-.js {
-    width: 75%;
-    animation: 2s js forwards;
-}
-
-.bootstrap {
-    width: 80%;
-    animation: 2s bootstrap forwards;
-}
-
-.comunicacion {
-    width: 80%;
-    animation: 2s comunicacion forwards;
-}
-
-.equipo {
-    width: 85%;
-    animation: 2s equipo forwards;
-}
-
-.creatividad {
-    width: 90%;
-    animation: 2s creatividad forwards;
-}
-
-@keyframes htmlcss {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 85%;
-    }
-}
-
-@keyframes js {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 70%;
-    }
-}
-
-@keyframes bootstrap {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 80%;
-    }
-}
-
-@keyframes comunicacion {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 80%;
-    }
-}
-
-@keyframes equipo {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 85%;
-    }
-}
-
-@keyframes creatividad {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 90%;
-    }
-}
 
 .editorskills {
     margin: auto;
@@ -168,3 +85,4 @@
 .editarskills {
     padding: 10px;
 }
+

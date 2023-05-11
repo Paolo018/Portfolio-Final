@@ -22,7 +22,7 @@
         </div>
         <div class="colresumen">
           <span class="titulo">Experiencia laboral</span>
-          <table *ngFor="let experiencia of experiencia">
+          <table *ngFor="let experiencia of experiencias">
             <tr>
               <td class="datos"><h3> {{experiencia.inicio}} </h3><h6>(Actualidad)</h6></td>
               <td rowspan="2" class="descripcion">
@@ -31,12 +31,12 @@
             </tr>
             <tr>
               <td>
-                <h4>{{experiencia.trabajo}}</h4>
+                <h4>{{experiencia.empresa}}</h4>
                 <p>{{experiencia.cargo}}</p>
               </td>
             </tr>
           </table>
-          <div class="editorexperiencia">
+          <div class="editorexperiencia" *ngIf="isLogged">
            <div class="añadirExperiencia">
             <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#añadirExperienciaModal">
               <i class="fa-solid fa-plus"></i>
@@ -52,4 +52,4 @@
       </div>
     </div>
   </section>
-  
+  <app-experiencia-add></app-experiencia-add>

@@ -1,50 +1,42 @@
 <!-- Seccion habilidades -->
 <section id="skills" class="skills">
-    <div class="contenido-skills">
-      <h2>Skills</h2>
-      <div class="fila-skills">
-        <!-- Skills tecnicos -->
-        <div class="col-skills">
-          <h3>Skills tecnicos</h3>
-        <div class="skill" *ngFor="let habilidadest of habilidadest">
-          <span>{{habilidadest.skill}}</span>
-          <div class="barra-skill">
-            <div [ngClass]='habilidadest.clase'>
-              <span>{{habilidadest.porcentaje}}</span>
-            </div>
-          </div>
+  <div class="contenido-skills">
+    <h2>Skills</h2>
+    <div class="fila-skills">
+      <!-- Skills tecnicos -->
+      <div class="skills center">
+      <div class="skill" *ngFor="let habilidad of habilidades">
+        
+        <span>{{habilidad.habilidad}}</span>
+        <div class="barra-skill">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"  role="progressbar"
+          [style.width.%]='habilidad.porcentaje'  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">{{habilidad.porcentaje}}
+       </div>
         </div>
-        </div>
-        <!-- Skills profesionales -->
-        <div class="col-skills">
-          <h3>Skills profresionales</h3>
-          <div class="skill" *ngFor="let habilidadesp of habilidadesp">
-            <span>{{habilidadesp.skill}}</span>
-            <div class="barra-skill">
-              <div [ngClass]='habilidadesp.clase'>
-                <span>{{habilidadesp.porcentaje}}</span>
-              </div>
-            </div>
-          </div>
-          </div>
+      </div>
       </div>
     </div>
-    <div class="editorskills">
+  </div>
+  <div class="editorskills" *ngIf="isLogged">
+    <div class="row">
       <div class="añadirskills">
-        <button type="submit" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#añadirSkillsModal">
-          <i class="fa-solid fa-plus"></i>
-          </button>
+      <button type="submit" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#añadirSkillsModal">
+        <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+        <div class="eliminarskills">
+          <button type="submit" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#eliminarSkillsModal">
+            <i class="fa-solid fa-trash-can"></i>
+            </button>
         </div>
-          <div class="eliminarskills">
-            <button type="submit" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#eliminarSkillsModal">
-              <i class="fa-solid fa-trash-can"></i>
-              </button>
+      <div class="editarskills">
+          <button type="submit" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#editarSkillsModal">
+            <i class="fa-sharp fa-solid fa-pencil"></i>
+            </button>
           </div>
-          <div class="editarskills">
-            <button type="submit" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#editarSkillsModal">
-              <i class="fa-sharp fa-solid fa-pencil"></i>
-              </button>
-            </div>
     </div>
-  
-  </section>
+  </div>
+
+</section>
+
+<app-habilidad-add></app-habilidad-add>

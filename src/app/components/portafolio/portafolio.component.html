@@ -2,12 +2,12 @@
 <section id="portfolio">
     <h3 class="titulo-portfolio">MIS PROYECTOS</h3>
     <div class="fila">
-      <div class="proyecto" *ngFor="let proyectos of proyectos">
+      <div class="proyecto" *ngFor="let portafolio of portafolio">
         <div class="overlay"></div>
-        <img [src]='proyectos.img' alt="">
+        <img [src]='portafolio.foto' alt="">
         <div class="info">
-          <h4>{{proyectos.proyecto}}</h4>
-          <p>{{proyectos.descripcion}}</p>
+          <h4>{{portafolio.proyecto}}</h4>
+          <p>{{portafolio.descripcion}}</p>
         </div>
       </div>
     </div>

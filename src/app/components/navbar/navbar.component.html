@@ -23,9 +23,10 @@
                 <li class="list-group-item"><a href=""><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
                 <li class="list-group-item"><a href=""><i class="fa-brands fa-codepen fa-xl"></i></a></li>
                 <li class="list-group-item">
-                 <!-- Button trigger modal -->
-                 <i class="fa-solid fa-user-lock fa-xl" type="button"  data-bs-toggle="modal" data-bs-target="#loginModal">
-                 </i></li>
+                 <i class="fa-solid fa-user-lock fa-xl" type="button" (click)="login()" *ngIf="!isLogged">
+                 </i>
+                 <i class="fa-solid fa-user fa-xl" type="button" (click)="onLogOut()" *ngIf="isLogged">
+                </i></li>
                </ul>
              </div>
           </div>

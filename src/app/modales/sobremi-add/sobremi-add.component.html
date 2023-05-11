@@ -1,0 +1,112 @@
+    <!-- Modal editar img inicio-->
+    <div class="modal fade" id="imgInicioModal" tabindex="-1" aria-labelledby="imgInicioModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="imgInicioModal">Editar imagen</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form (ngSubmit)="onCreate()">
+            <div class="modal-body">
+                <div class="mb-3">  
+                  <label for="foto" class="form-label">Editar imagen</label>
+                  <input type="url" placeholder="inserte url de imagen" id="foto" name="imgInicio">
+                </div>
+                
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="submit" class="btn btn-primary">Agregar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  
+    <!-- Modal editar img Perfil-->
+    <div class="modal fade" id="imgPerfilModal" tabindex="-1" aria-labelledby="imgPerfilModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="imgPerfilModal">Editar imagen</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form (ngSubmit)="onCreate()">
+          <div class="modal-body">
+              <div class="mb-3">  
+                <label for="foto" class="form-label">Editar imagen</label>
+                <input type="url" placeholder="inserte url de imagen" id="foto" name="foto">
+              </div>
+              
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary">Agregar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal editar nombre Perfil-->
+    <div class="modal fade" id="nombrePerfilModal" tabindex="-1" aria-labelledby="nombrePerfilModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="nombrePerfilModal">Editar perfil</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+  
+          <form (ngSubmit)="onCreate()">
+          <div class="modal-body">
+              <div class="mb-3">  
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" placeholder="nombre" id="nombre" name="nombrePerfil">
+              </div>
+
+              <div class="mb-3">  
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" placeholder="apellido" id="apellido" name="nombrePerfil">
+              </div>
+                      
+              <div class="mb-3">  
+                <label for="sobremi" class="form-label">Sobre mi</label>
+                <input type="text" placeholder="sobre mi" id="sobremi" name="nombrePerfil">
+              </div>
+
+              <div class="mb-3">  
+                <label for="edad" class="form-label">Edad</label>
+                <input type="text" placeholder="edad" id="edad" name="nombrePerfil">
+              </div>
+              
+              <div class="mb-3">  
+                <label for="telefono" class="form-label">Telefono</label>
+                <input type="text" placeholder="telefono" id="telefono" name="nombrePerfil">
+              </div>
+              
+              <div class="mb-3">  
+                <label for="email" class="form-label">Email</label>
+                <input type="text" placeholder="email" id="email" name="nombrePerfil">
+              </div>
+              
+
+              <div class="mb-3">  
+                <label for="direccion" class="form-label">Direccion</label>
+                <input type="text" placeholder="direccion" id="direccion" name="nombrePerfil">
+              </div>
+                            
+              <div class="mb-3">  
+                <label for="foto" class="form-label">Foto</label>
+                <input type="text" placeholder="foto" id="foto" name="nombrePerfil">
+              </div>
+              
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>

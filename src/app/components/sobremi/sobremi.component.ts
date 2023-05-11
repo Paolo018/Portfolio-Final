@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { DatosService } from 'src/app/servicios/datos.service';
+import { Persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/servicios/persona.service';
+import { TokenService } from 'src/app/servicios/token.service';
 
 @Component({
   selector: 'app-sobremi',
@@ -7,13 +9,18 @@ import { DatosService } from 'src/app/servicios/datos.service';
   styleUrls: ['./sobremi.component.css']
 })
 export class SobremiComponent implements OnInit {
-  sobremi: any;
-  constructor(private datos:DatosService) {}
+  persona: Persona[]=[];
+  constructor(public personaService:PersonaService, private tokenService: TokenService) {}
+
+  isLogged = false;
 
   ngOnInit(): void {
-    this.datos.getDatos().subscribe(data => {
-      this.sobremi = data.sobremi;
-    })
+
+    if(this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
   }
 
 }
