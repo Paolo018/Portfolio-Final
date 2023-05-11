@@ -36,7 +36,7 @@ Imgbb
 
 ## Visualizaciones
 
-Para ver este proyecto funcionando, clickea acá url=https://portfolio-back-end-wiyc.onrender.com.
+Para ver este proyecto funcionando, https://portfolio-back-end-wiyc.onrender.com.
 
 Para acceder al dashboard, debés clickear en el botón de login ubicado en el extremo derecho del navbar e introducir el email y la clave solicitados.
 
